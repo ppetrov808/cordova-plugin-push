@@ -42,10 +42,10 @@
     </config-file>
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <activity android:exported="true" android:launchMode="singleTop" android:showOnLockScreen="true" android:name="com.adobe.phonegap.push.IncomingCallActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-      <activity android:exported="true" android:name="com.adobe.phonegap.push.IncomingCallActionHandlerActivity" />
-      <activity android:name="com.adobe.phonegap.push.PushHandlerActivity" android:exported="true" android:permission="${applicationId}.permission.PushHandlerActivity"/>
-      <activity android:name="com.adobe.phonegap.push.BackgroundHandlerActivity" android:exported="true" android:permission="${applicationId}.permission.BackgroundHandlerActivity">
+      <activity android:screenOrientation="nosensor" android:exported="true" android:launchMode="singleTop" android:showOnLockScreen="true" android:name="com.adobe.phonegap.push.IncomingCallActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+      <activity android:screenOrientation="nosensor" android:exported="true" android:name="com.adobe.phonegap.push.IncomingCallActionHandlerActivity" />
+      <activity android:screenOrientation="nosensor" android:name="com.adobe.phonegap.push.PushHandlerActivity" android:exported="true" android:permission="${applicationId}.permission.PushHandlerActivity"/>
+      <activity android:screenOrientation="nosensor" android:name="com.adobe.phonegap.push.BackgroundHandlerActivity" android:exported="true" android:permission="${applicationId}.permission.BackgroundHandlerActivity">
         <intent-filter>
           <action android:name="com.adobe.phonegap.push.background.MESSAGING_EVENT"/>
           <category android:name="android.intent.category.DEFAULT" />
